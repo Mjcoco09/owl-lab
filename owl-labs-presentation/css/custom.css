@@ -1,0 +1,242 @@
+/* Owl Labs Custom Styles */
+
+:root {
+    --owl-purple: #212c65;
+    --owl-teal: #1b92c8;
+    --owl-orange: #b4d04c;
+    --owl-dark: #1a1a1a;
+    --owl-light: #f5f5f5;
+}
+
+/* Override Reveal.js theme */
+.reveal {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--owl-light);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    color: var(--owl-light);
+    font-weight: 700;
+}
+
+.reveal h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.reveal h2 {
+    font-size: 2.2em;
+    color: var(--owl-teal);
+    margin-bottom: 0.5em;
+}
+
+.reveal h3 {
+    font-size: 1.5em;
+    color: var(--owl-purple);
+}
+
+.reveal p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.reveal ul {
+    display: block;
+    text-align: left;
+}
+
+.reveal li {
+    margin-bottom: 0.5em;
+}
+
+/* Color Palette Display */
+.color-palette {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.color-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.owl-purple {
+    background-color: var(--owl-purple);
+}
+
+.owl-teal {
+    background-color: var(--owl-teal);
+}
+
+.owl-orange {
+    background-color: var(--owl-orange);
+}
+
+.color-box p {
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+
+.color-box code {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+}
+
+/* Two Column Layout */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    text-align: left;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+    width: 600px;
+    height: 400px;
+    margin: 2em auto;
+    background: linear-gradient(135deg, var(--owl-purple), var(--owl-teal));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+/* Call to Action */
+.cta {
+    margin-top: 2em;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: var(--owl-teal);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: var(--owl-purple);
+}
+
+/* Table of Contents */
+.toc {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc li {
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.toc a {
+    color: var(--owl-teal);
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+    border-left: 4px solid var(--owl-teal);
+    padding-left: 1em;
+    transition: all 0.3s ease;
+}
+
+.toc a:hover {
+    background-color: rgba(27, 146, 200, 0.1);
+    border-left-width: 8px;
+    color: var(--owl-lime);
+}
+
+/* Connection Steps */
+.connection-steps {
+    text-align: left;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.connection-steps p {
+    padding: 1em;
+    margin: 1em 0;
+    background-color: rgba(27, 146, 200, 0.1);
+    border-radius: 8px;
+}
+
+/* Tables */
+.reveal table {
+    margin: 1em auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.reveal table th,
+.reveal table td {
+    padding: 0.8em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reveal table th {
+    background-color: var(--owl-purple);
+    color: white;
+    font-weight: bold;
+}
+
+.reveal table tr:nth-child(even) {
+    background-color: rgba(27, 146, 200, 0.1);
+}
+
+.reveal ol {
+    text-align: left;
+    display: block;
+}
+
+/* Fragment Animations */
+.reveal .fragment {
+    opacity: 0.3;
+}
+
+.reveal .fragment.visible {
+    opacity: 1;
+}
+
+/* Custom Slide Backgrounds */
+.reveal section[data-background-color] h2,
+.reveal section[data-background-color] p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Progress Bar */
+.reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    height: 3px;
+}
+
+.reveal .progress span {
+    background: var(--owl-teal);
+}
+
+/* Slide Number */
+.reveal .slide-number {
+    color: var(--owl-teal);
+}

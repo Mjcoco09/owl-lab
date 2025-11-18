@@ -1,0 +1,16 @@
+{
+  "name": "owl-labs-presentation",
+  "version": "1.0.0",
+  "description": "Owl Labs Presentation Style Guide built with Reveal.js",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": ["reveal.js", "presentation", "owl-labs", "style-guide"],
+  "author": "Owl Labs",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
