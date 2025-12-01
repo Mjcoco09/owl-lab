@@ -1,0 +1,16 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd owl-labs-presentation && npm ci
+    build:
+      commands:
+        - echo "Static site - no build needed"
+  artifacts:
+    baseDirectory: owl-labs-presentation
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - owl-labs-presentation/node_modules/**/*
