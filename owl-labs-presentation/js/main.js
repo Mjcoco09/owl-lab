@@ -2,7 +2,7 @@
 Reveal.initialize({
     // Display configuration
     width: 1920,
-    height: 1080,
+    height: 1200,
     margin: 0.1,
     
     // Display controls in the bottom right corner

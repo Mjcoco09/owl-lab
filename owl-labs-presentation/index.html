@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +10,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css" id="theme">
     <link rel="stylesheet" href="css/custom.css">
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
             <!-- Title Slide -->
             <section>
                 <h1>Meeting Owl 3</h1>
-                <h2>Simple User Guide</h2>
+                <h2>Simple User Guide for Google Meet</h2>
                 <p>Everything You Need to Know</p>
             </section>
 
             <!-- Table of Contents -->
             <section>
                 <h2>Table of Contents</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; max-width: 1000px; margin: 0 auto;">
-                    <ol style="font-size: 0.85em; line-height: 1.8; padding-left: 2em; text-align: left;">
-                        <li><a href="#/2">Setting Up Your Owl</a></li>
-                        <li><a href="#/3">Plugging Everything In</a></li>
-                        <li><a href="#/4">Connecting to Your Computer</a></li>
-                        <li><a href="#/5">Using the Phone App (Optional)</a></li>
-                        <li><a href="#/6">Joining a Zoom/Teams Meeting</a></li>
-                        <li><a href="#/7">Connecting 2 Owls Together</a></li>
-                    </ol>
-                    <ol start="7" style="font-size: 0.85em; line-height: 1.8; padding-left: 2em; text-align: left;">
-                        <li><a href="#/8">Casting Your Screen to a TV</a></li>
-                        <li><a href="#/9">What the Owl Does Automatically</a></li>
-                        <li><a href="#/10">Problems? Quick Fixes</a></li>
-                        <li><a href="#/11">Do's and Don'ts</a></li>
-                        <li><a href="#/12">Common Questions</a></li>
-                    </ol>
+                <div class="toc-grid">
+                    <a href="#/2" class="toc-item">
+                        <span class="toc-number">01</span>
+                        <span class="toc-title">Setting Up Your Owl</span>
+                    </a>
+                    <a href="#/3" class="toc-item">
+                        <span class="toc-number">02</span>
+                        <span class="toc-title">Plugging Everything In</span>
+                    </a>
+                    <a href="#/4" class="toc-item">
+                        <span class="toc-number">03</span>
+                        <span class="toc-title">Using the Phone App</span>
+                    </a>
+                    <a href="#/5" class="toc-item">
+                        <span class="toc-number">04</span>
+                        <span class="toc-title">Joining a Zoom/Teams Meeting</span>
+                    </a>
+                    <a href="#/6" class="toc-item">
+                        <span class="toc-number">05</span>
+                        <span class="toc-title">Connecting 2 Owls Together</span>
+                    </a>
+                    <a href="#/7" class="toc-item">
+                        <span class="toc-number">06</span>
+                        <span class="toc-title">Casting Your Screen to a TV</span>
+                    </a>
+                    <a href="#/9" class="toc-item">
+                        <span class="toc-number">07</span>
+                        <span class="toc-title">What the Owl Does Automatically</span>
+                    </a>
+                    <a href="#/10" class="toc-item">
+                        <span class="toc-number">08</span>
+                        <span class="toc-title">Problems? Quick Fixes</span>
+                    </a>
+                    <a href="#/11" class="toc-item">
+                        <span class="toc-number">09</span>
+                        <span class="toc-title">Do's and Don'ts</span>
+                    </a>
+                    <a href="#/12" class="toc-item">
+                        <span class="toc-number">10</span>
+                        <span class="toc-title">Common Questions</span>
+                    </a>
                 </div>
             </section>
 
@@ -47,20 +74,24 @@
                 <h3>Where to Put It</h3>
                 <div style="text-align: left; font-size: 0.9em;">
                     <p>✓ <strong>Put it in the CENTER of your table</strong></p>
-                    <p>✓ <strong>Keep it 4-6 feet away</strong> from people</p>
                     <p>✓ <strong>Make sure nothing blocks it</strong> - it needs to see everyone</p>
                     <p>✓ <strong>Put it on a flat surface</strong> so it doesn't fall</p>
                     <p>✗ <strong>Don't put it near windows</strong> - too much light behind people</p>
                     <p>✗ <strong>Don't hide it in a corner</strong> - it can't see everyone</p>
                 </div>
-                <p style="margin-top: 1em; font-size: 0.8em;">Tip: Think of it like a centerpiece on your table!</p>
+                <div style="margin-top: 2em;">
+                    <button onclick="document.getElementById('setupViewModal').style.display='block'"
+                        style="background-color: #b4d04c; color: #212c65; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        📷 View Setup Photo
+                    </button>
+                </div>
             </section>
 
             <!-- Connecting to Power & Network -->
             <section>
                 <h2>Plugging Everything In</h2>
                 <h3>Super Easy - Just 2 Steps!</h3>
-                <div class="two-column" style="font-size: 0.85em;">
+                <div style="font-size: 0.85em;">
                     <div style="text-align: left;">
                         <p><strong>Step 1: Plug in the Power</strong></p>
                         <ul style="font-size: 0.95em;">
@@ -69,7 +100,7 @@
                             <li>Plug the other end into the wall</li>
                             <li>The Owl will light up - that's good! ✓</li>
                         </ul>
-                        
+
                         <p style="margin-top: 1em;"><strong>Step 2: Connect to Your Computer</strong></p>
                         <ul style="font-size: 0.95em;">
                             <li>Take the USB cable from the box</li>
@@ -79,22 +110,14 @@
                         </ul>
                     </div>
                 </div>
-                <p style="margin-top: 1em; font-size: 0.8em;">Setup complete!</p>
-            </section>
 
-            <!-- Pairing with Your Device -->
-            <section>
-                <h2>Connecting to Your Computer</h2>
-                <h3>Choose Your Connection Method</h3>
-                <div style="text-align: left; font-size: 0.85em;">
-                    <p><strong>USB Cable:</strong></p>
-                    <ul>
-                        <li>Plug and play - works instantly</li>
-                        <li>No passwords or setup needed</li>
-                        <li>Most reliable connection</li>
-                        <li>Best for everyday use</li>
-                    </ul>
+                <div style="margin-top: 2em;">
+                    <button onclick="document.getElementById('imageModal').style.display='block'"
+                        style="background-color: #b4d04c; color: #212c65; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        📷 Press here for pictures
+                    </button>
                 </div>
+                <p style="margin-top: 1em; font-size: 0.8em;">Setup complete!</p>
             </section>
 
             <!-- Using the Owl App -->
@@ -105,7 +128,7 @@
                     <div style="text-align: left;">
                         <p><strong>Do You Need the App?</strong></p>
                         <p>The Owl works great with just USB. The app adds extra features.</p>
-                        
+
                         <p style="margin-top: 1em;"><strong>App Features Include:</strong></p>
                         <ul>
                             <li>See what the camera sees</li>
@@ -114,7 +137,7 @@
                             <li>Connect to WiFi</li>
                             <li>Pair multiple Owls together</li>
                         </ul>
-                        
+
                         <p style="margin-top: 1em;"><strong>To Download:</strong></p>
                         <ul>
                             <li>iPhone: Search "Meeting Owl" in App Store</li>
@@ -122,7 +145,8 @@
                         </ul>
                     </div>
                     <div style="text-align: center;">
-                        <img src="images/OwlAppstoreICon.png" alt="Meeting Owl app icon" style="max-width: 100%; border-radius: 8px;">
+                        <img src="images/OwlAppstoreICon.png" alt="Meeting Owl app icon"
+                            style="max-width: 100%; border-radius: 8px;">
                     </div>
                 </div>
             </section>
@@ -138,10 +162,11 @@
                             <li>Open Zoom (or Teams, or Google Meet)</li>
                             <li>Click the little gear icon (Settings)</li>
                             <li>Find "Video" and choose <strong>"Meeting Owl 3"</strong></li>
-                            <li>Find "Audio" and choose <strong>"Meeting Owl 3"</strong> for BOTH microphone AND speaker</li>
+                            <li>Find "Audio" and choose <strong>"Meeting Owl 3"</strong> for BOTH microphone AND speaker
+                            </li>
                             <li>Close settings - you're ready!</li>
                         </ol>
-                        
+
                         <p style="margin-top: 1em;"><strong>Now Join Your Meeting:</strong></p>
                         <ul>
                             <li>Click your meeting link like normal</li>
@@ -149,8 +174,10 @@
                         </ul>
                     </div>
                     <div style="text-align: center;">
-                        <img src="images/cameraAcess.png" alt="Selecting Meeting Owl 3 for camera" style="max-width: 100%; border-radius: 8px; margin-bottom: 0.5em;">
-                        <img src="images/MicAcess.png" alt="Selecting Meeting Owl 3 for microphone and speaker" style="max-width: 100%; border-radius: 8px;">
+                        <img src="images/cameraAcess.png" alt="Selecting Meeting Owl 3 for camera"
+                            style="max-width: 100%; border-radius: 8px; margin-bottom: 0.5em;">
+                        <img src="images/MicAcess.png" alt="Selecting Meeting Owl 3 for microphone and speaker"
+                            style="max-width: 100%; border-radius: 8px;">
                     </div>
                 </div>
             </section>
@@ -159,8 +186,8 @@
             <section>
                 <h2>Connecting 2 Owls Together</h2>
                 <h3>For Bigger Rooms or More Coverage</h3>
-                <div style="display: flex; gap: 2em; align-items: flex-start;">
-                    <div style="text-align: left; font-size: 0.8em; flex: 1;">
+                <div style="display: flex; gap: 2em; align-items: flex-start; text-align: left; font-size: 0.75em;">
+                    <div style="flex: 1;">
                         <p><strong>Why Use 2 Owls?</strong></p>
                         <ul style="font-size: 0.95em;">
                             <li><strong>Large conference rooms</strong> - bigger than 18 feet</li>
@@ -168,8 +195,21 @@
                             <li><strong>Better coverage</strong> - see more angles</li>
                             <li><strong>Better sound pickup</strong> - covers whole room</li>
                         </ul>
-                        
-                        <p style="margin-top: 1.5em;"><strong>How to Connect Them (Called "Owl Connect"):</strong></p>
+
+                        <p style="margin-top: 1em;"><strong>What Happens:</strong></p>
+                        <ul style="font-size: 0.95em;">
+                            <li>✓ Both Owls work together wirelessly</li>
+                            <li>✓ They share video and audio automatically</li>
+                            <li>✓ Remote people see the best view from either Owl</li>
+                            <li>✓ No extra cables needed between the Owls!</li>
+                        </ul>
+
+                        <p style="margin-top: 1em; color: #b4d04c; font-weight: bold;">Note: The phone app is required
+                            for pairing multiple Owls</p>
+                    </div>
+
+                    <div style="flex: 1;">
+                        <p><strong>How to Connect Them (Called "Owl Connect"):</strong></p>
                         <ol style="font-size: 0.95em;">
                             <li><strong>Download the Meeting Owl App</strong> on your phone</li>
                             <li><strong>Plug in BOTH Owls</strong> to power</li>
@@ -179,24 +219,13 @@
                             <li><strong>Select both Owls</strong> you want to connect</li>
                             <li><strong>Wait for them to connect</strong> - they'll show as "Paired"</li>
                         </ol>
-                        
-                        <p style="margin-top: 1.5em;"><strong>What Happens:</strong></p>
-                        <ul style="font-size: 0.95em;">
-                            <li>✓ Both Owls work together wirelessly</li>
-                            <li>✓ They share video and audio automatically</li>
-                            <li>✓ Remote people see the best view from either Owl</li>
-                            <li>✓ No extra cables needed between the Owls!</li>
-                        </ul>
-                        
-                        <p style="margin-top: 1em; color: #b4d04c; font-weight: bold;">Note: The phone app is required for pairing multiple Owls</p>
-                    </div>
-                    
-                    <!-- Video Button on Right Side -->
-                    <div style="text-align: center; padding-top: 3em;">
-                        <button onclick="document.getElementById('videoModal').style.display='block'" 
-                                style="background-color: #1b92c8; color: white; border: none; padding: 20px 25px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-                            ▶<br>Watch<br>Demo<br>Video
-                        </button>
+
+                        <div style="text-align: center; margin-top: 2em;">
+                            <button onclick="document.getElementById('videoModal').style.display='block'"
+                                style="background-color: #1b92c8; color: white; border: none; padding: 15px 25px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                                ▶ Watch Demo Video
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -216,13 +245,8 @@
                             <li>Click on your TV (like Roku) from the list</li>
                             <li>Your screen will now appear on the TV!</li>
                         </ol>
-                        
-                        <p style="margin-top: 1.5em;"><strong>For Roku TVs Specifically:</strong></p>
-                        <ul style="font-size: 0.95em;">
-                            <li>Make sure to press Windows + P FIRST</li>
-                            <li>Select your display mode (Duplicate/Extend)</li>
-                            <li>Then the Roku will appear when you press Windows + K</li>
-                        </ul>
+
+
                     </div>
                     <div style="text-align: left;">
                         <p><strong>For Mac Users:</strong></p>
@@ -233,7 +257,7 @@
                             <li>Enter the code if prompted</li>
                             <li>Your screen will mirror to the TV!</li>
                         </ol>
-                        
+
                         <p style="margin-top: 1.5em;"><strong>Alternative for Mac:</strong></p>
                         <ul style="font-size: 0.95em;">
                             <li>System Preferences → Displays</li>
@@ -243,14 +267,52 @@
                         </ul>
                     </div>
                 </div>
-                <p style="margin-top: 1em; font-size: 0.75em; color: #b4d04c;"><strong>Note:</strong> Your TV must support wireless display (Miracast for Windows, AirPlay for Mac) or be connected via HDMI cable</p>
+                <p style="margin-top: 1em; font-size: 0.75em; color: #b4d04c;"><strong>Note:</strong> Your TV must
+                    support wireless display (Miracast for Windows, AirPlay for Mac) or be connected via HDMI cable</p>
+                
+                <div style="display: flex; gap: 2em; justify-content: center; margin-top: 2em;">
+                    <button onclick="document.getElementById('castingModalWindows').style.display='block'"
+                        style="background-color: #b4d04c; color: #212c65; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        📷 Windows Screenshots
+                    </button>
+                    <button onclick="document.getElementById('castingModalMac').style.display='block'"
+                        style="background-color: #b4d04c; color: #212c65; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                        📷 Mac Screenshots
+                    </button>
+                </div>
+
+                <div style="margin-top: 2em;">
+                    <a href="#/9" style="display: inline-block; background-color: #1b92c8; color: white; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3); text-decoration: none;">
+                        Having Trouble? Click Here
+                    </a>
+                </div>
+            </section>
+
+            <!-- Casting Troubleshooting -->
+            <section>
+                <h2>Trouble Screencasting?</h2>
+                <h3>Quick Fixes That Usually Work</h3>
+                <div style="text-align: left; font-size: 0.75em; max-width: 800px; margin: 0 auto;">
+                    <p><strong>If you're having issues connecting:</strong></p>
+                    <ul style="font-size: 0.95em;">
+                        <li><strong>Follow the pictures to restart TV</strong></li>
+                        <li><strong>If all fails, use a different device</strong></li>
+                    </ul>
+
+                    <p style="margin-top: 1em; color: #b4d04c;"><strong>Pro Tip:</strong> Restarting both devices solves most connection problems!</p>
+                </div>
+
+                <button onclick="document.getElementById('troubleshootModal').style.display='block'"
+                    style="background-color: #b4d04c; color: #212c65; border: none; padding: 15px 30px; font-size: 1em; border-radius: 8px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3); margin-top: 1em;">
+                    📷 View Screenshots
+                </button>
             </section>
 
             <!-- Camera Controls -->
             <section>
                 <h2>What the Owl Does Automatically</h2>
                 <h3>You Don't Need to Do Anything!</h3>
-                <div style="text-align: left; font-size: 0.85em;">
+                <div style="text-align: left; font-size: 0.75em;">
                     <p><strong>The Owl is Smart - It Does Everything:</strong></p>
                     <ul>
                         <li><strong>Sees everyone in the room</strong> - full 360° view</li>
@@ -259,15 +321,16 @@
                         <li><strong>Shows multiple people</strong> if they talk at the same time</li>
                         <li><strong>Switches views smoothly</strong> - not jumpy or distracting</li>
                     </ul>
-                    
-                    <p style="margin-top: 1.5em;"><strong>What You See on Your Screen:</strong></p>
+
+                    <p style="margin-top: 1em;"><strong>What You See on Your Screen:</strong></p>
                     <ul>
                         <li>Sometimes: Full room view (everyone at once)</li>
                         <li>Sometimes: Close-up of whoever is speaking</li>
                         <li>The Owl decides what's best automatically!</li>
                     </ul>
                 </div>
-                <p style="margin-top: 1em; font-size: 0.8em;">Note: The Owl's AI handles all camera adjustments automatically</p>
+                <p style="margin-top: 0.8em; font-size: 0.8em;">Note: The Owl's AI handles all camera adjustments
+                    automatically</p>
             </section>
 
             <!-- Audio Settings
@@ -308,21 +371,21 @@
                         <li>Try a different USB port on your laptop</li>
                         <li>Unplug the Owl, wait 10 seconds, plug it back in</li>
                     </ul>
-                    
+
                     <p><strong>"People can't hear me clearly"</strong></p>
                     <ul style="font-size: 0.95em; margin-bottom: 1em;">
                         <li>Sit closer - stay within 6 feet of the Owl</li>
                         <li>Close windows/doors to reduce outside noise</li>
                         <li>Check you're not muted in Zoom/Teams</li>
                     </ul>
-                    
+
                     <p><strong>"The video is blurry"</strong></p>
                     <ul style="font-size: 0.95em; margin-bottom: 1em;">
                         <li>Wipe the camera lens with a soft cloth</li>
                         <li>Turn on more lights in the room</li>
                         <li>Check your internet connection</li>
                     </ul>
-                    
+
                     <p><strong>"I hear an echo"</strong></p>
                     <ul style="font-size: 0.95em;">
                         <li>Turn down the Owl's speaker volume</li>
@@ -340,7 +403,6 @@
                         <ul>
                             <li>Put Owl in center of table</li>
                             <li>Sit around it evenly</li>
-                            <li>Keep it 4-6 feet from people</li>
                             <li>Turn on room lights</li>
                             <li>Speak at normal volume</li>
                             <li>Test before important meetings</li>
@@ -355,8 +417,6 @@
                             <li>Block the camera view</li>
                             <li>Put it near windows</li>
                             <li>Sit in the dark</li>
-                            <li>Shout at it</li>
-                            <li>Touch it during meetings</li>
                             <li>Cover the microphones</li>
                             <li>Unplug it while it's on</li>
                         </ul>
@@ -369,45 +429,40 @@
                 <h2>Common Questions</h2>
                 <div style="text-align: left; font-size: 0.85em;">
                     <p><strong>Q: How many people can use it at once?</strong><br>
-                    A: 8-10 people in a standard room. Use 2 Owls for larger rooms.</p>
-                    
+                        A: 8-10 people in a standard room. Use 2 Owls for larger rooms.</p>
+
                     <p><strong>Q: Do I need to install anything?</strong><br>
-                    A: No! Just plug in the USB cable - it works automatically.</p>
-                    
+                        A: No! Just plug in the USB cable - it works automatically.</p>
+
                     <p><strong>Q: Does it work with Zoom, Teams, and Google Meet?</strong><br>
-                    A: Yes! Works with all major video platforms.</p>
-                    
+                        A: Yes! Works with all major video platforms.</p>
+
                     <p><strong>Q: Can I connect 2 Owls together?</strong><br>
-                    A: Yes! Use the phone app's "Owl Connect" feature for larger spaces.</p>
-                    
+                        A: Yes! Use the phone app's "Owl Connect" feature for larger spaces.</p>
+
                     <p><strong>Q: What if it stops working?</strong><br>
-                    A: Unplug it, wait 10 seconds, then plug it back in.</p>
-                    
+                        A: Unplug it, wait 10 seconds, then plug it back in.</p>
+
                     <p><strong>Q: Where do I get help?</strong><br>
-                    A: Contact IT or visit support.owllabs.com</p>
+                        A: Contact IT or visit support.owllabs.com</p>
                 </div>
             </section>
 
             <!-- Final Slide -->
-            <section data-background-color="#212c65">
-                <h2>You're Ready!</h2>
-                <div style="font-size: 0.9em; margin-top: 2em;">
-                    <p>Remember the 3 easy steps:</p>
-                    <ol style="text-align: left; max-width: 600px; margin: 1em auto; font-size: 1.1em;">
-                        <li>Plug in power</li>
-                        <li>Plug in USB to your laptop</li>
-                        <li>Select "Meeting Owl 3" in Zoom/Teams</li>
-                    </ol>
-                    <p style="margin-top: 2em; font-size: 1.2em;">That's it! The Owl does the rest!</p>
-                </div>
-            </section>
+            <!-- Slide removed -->
+
+
+
+
         </div>
     </div>
 
     <!-- Video Modal - Outside of slides -->
-    <div id="videoModal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95);">
-        <span onclick="document.getElementById('videoModal').style.display='none'; document.getElementById('demoVideo').pause();" 
-              style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+    <div id="videoModal"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95);">
+        <span
+            onclick="document.getElementById('videoModal').style.display='none'; document.getElementById('demoVideo').pause();"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
             <video id="demoVideo" controls style="max-width: 80%; max-height: 80%;">
                 <source src="images/slide8video.mov" type="video/mp4">
@@ -416,7 +471,135 @@
         </div>
     </div>
 
+
+
+    <!-- Image Modal -->
+    <div id="imageModal"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow-y: auto;">
+        <span onclick="document.getElementById('imageModal').style.display='none'"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+        <div
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 50px 0;">
+            <h2 style="color: white; margin-bottom: 30px;">Setup Photos</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px;">
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/plugged%20in%20owl.jpeg" alt="Owl Ports"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Owl Ports</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/cord%20plug%20in.jpeg" alt="Floor Outlet"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Floor Outlet</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/owl%20light%20up.jpeg" alt="Owl Device"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Owl Device</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Windows Casting Modal -->
+    <div id="castingModalWindows"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow-y: auto;">
+        <span onclick="document.getElementById('castingModalWindows').style.display='none'"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+        <div
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 50px 0;">
+            <h2 style="color: white; margin-bottom: 30px;">Windows Casting Screenshots</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px;">
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/WindowsProjectScreenshot.png" alt="Display Mode Selection"
+                        style="max-height: 500px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Choose Display Mode (Windows + P)</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/windowsCastScreenshot.png" alt="Available Displays"
+                        style="max-height: 500px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Available Displays (Windows + K)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mac Casting Modal -->
+    <div id="castingModalMac"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow-y: auto;">
+        <span onclick="document.getElementById('castingModalMac').style.display='none'"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+        <div
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 50px 0;">
+            <h2 style="color: white; margin-bottom: 30px;">Mac Casting Screenshots</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px;">
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/mac1.png" alt="Mac Step 1"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 1</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/mac2.png" alt="Mac Step 2"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 2</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/mac3.png" alt="Mac Step 3"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Troubleshooting Modal -->
+    <div id="troubleshootModal"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow-y: auto;">
+        <span onclick="document.getElementById('troubleshootModal').style.display='none'"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+        <div
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 50px 0;">
+            <h2 style="color: white; margin-bottom: 30px;">Troubleshooting Screenshots</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px;">
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/tvstep1.jpeg" alt="TV Step 1"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 1</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/tvstep2.jpeg" alt="TV Step 2"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 2</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/tvstep3.jpeg" alt="TV Step 3"
+                        style="max-height: 400px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Step 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup View Modal -->
+    <div id="setupViewModal"
+        style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow-y: auto;">
+        <span onclick="document.getElementById('setupViewModal').style.display='none'"
+            style="position: fixed; top: 30px; right: 50px; color: white; font-size: 50px; font-weight: bold; cursor: pointer; z-index: 10001; background-color: rgba(0,0,0,0.7); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 3px solid white;">×</span>
+        <div
+            style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 50px 0;">
+            <h2 style="color: white; margin-bottom: 30px;">Setup View</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px;">
+                <div style="text-align: center;">
+                    <img src="../owl%20screenshots/Setupview.jpeg" alt="Setup View"
+                        style="max-height: 600px; border-radius: 8px; border: 2px solid white;">
+                    <p style="color: white; margin-top: 10px;">Correct Owl Placement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

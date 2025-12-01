@@ -152,20 +152,52 @@
     font-size: 1.3em;
 }
 
-.toc a {
-    color: var(--owl-teal);
-    text-decoration: none;
-    padding: 0.5em;
-    display: block;
-    border-left: 4px solid var(--owl-teal);
-    padding-left: 1em;
-    transition: all 0.3s ease;
+/* Modern TOC Grid */
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+    max-width: 1200px;
+    margin: 1em auto;
 }
 
-.toc a:hover {
-    background-color: rgba(27, 146, 200, 0.1);
-    border-left-width: 8px;
-    color: var(--owl-lime);
+.toc-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8em 1.2em;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    text-decoration: none !important;
+    color: var(--owl-light) !important;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--owl-teal);
+    text-align: left;
+}
+
+.toc-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.15);
+    border-left-color: var(--owl-orange);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.toc-number {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: var(--owl-teal);
+    font-size: 1.4em;
+    margin-right: 0.8em;
+    opacity: 0.8;
+}
+
+.toc-item:hover .toc-number {
+    color: var(--owl-orange);
+}
+
+.toc-title {
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 /* Connection Steps */
